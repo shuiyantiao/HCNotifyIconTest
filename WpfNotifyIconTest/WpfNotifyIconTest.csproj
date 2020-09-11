@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\green.png" />
+    <None Remove="Resources\red.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HandyControl" Version="2.5.0.2" />
+    <PackageReference Include="MvvmLightStd10" Version="5.4.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\green.png" />
+    <Resource Include="Resources\red.png" />
+  </ItemGroup>
+
+</Project>
